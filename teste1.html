@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido Importante</title>
+  <style>
+    body {
+      background: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+      color: #444;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #resposta {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #006400;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Pedido Sincero</h1>
+    <p>Senhor Pedro Aragão, pai de Ana Clara, eu venho através desse humilde código lhe pedir algo muito importante, a muito tempo eu venho tentando conquistar a sua filha, e eu realmente gosto muito dela, o que eu sinto por ela é algo que eu quero levar para a vida toda, então eu lhe peço, me deixe ser o homem com quem a sua filha irá se casar</p>
+    <button onclick="responder()">Sim</button>
+    <button onclick="responde()">Não</button>
+    <div id="resposta"></div>
+  </div>
+
+  <script>
+    function responde() {
+      const respostaDiv = document.getElementById("resposta");
+      respostaDiv.innerText = "Erro! tente novamente a outra resposta.";
+    }
+    
+    function responder() {
+      const respostaDiv = document.getElementById("resposta");
+      respostaDiv.innerText = "Obrigado pela confiança, prometo cuidar bem dela! ❤️";
+    }
+  </script>
+
+</body>
+</html>
